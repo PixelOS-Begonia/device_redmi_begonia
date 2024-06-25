@@ -20,6 +20,12 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     $(LOCAL_PATH)
 
+# Kernel
+TARGET_KERNEL_DIR := device/xiaomi/begonia-kernel
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_KERNEL_DIR)/Image:kernel
+
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
 
