@@ -15,13 +15,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from begonia device
 $(call inherit-product, device/redmi/begonia/device.mk)
 
-# Inherit some common PixelOS stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common YAAP stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
-# PixelOS additional flags
-TARGET_CALL_RECORDING_SUPPORTED := true
+# YAAP additional flags
+TARGET_BUILD_GAPPS := true
 TARGET_SUPPORTS_64_BIT_APPS := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := true
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
@@ -36,7 +36,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := aosp_begonia
+PRODUCT_NAME := yaap_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
