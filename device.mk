@@ -115,7 +115,9 @@ PRODUCT_PACKAGES += \
     libhwc2on1adapter \
     libhwc2onfbadapter \
     libion \
-    libion.vendor
+    libion.vendor \
+    libutilscallstack \
+    libutilscallstack.vendor
 
 PRODUCT_PACKAGES += \
     disable_configstore
