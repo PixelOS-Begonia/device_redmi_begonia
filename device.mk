@@ -113,7 +113,9 @@ PRODUCT_PACKAGES += \
     libvulkan \
     libfmq.vendor \
     libhwc2on1adapter \
-    libhwc2onfbadapter
+    libhwc2onfbadapter \
+    libion \
+    libion.vendor
 
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -128,6 +130,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
     prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
+
+PRODUCT_PACKAGES += \
+    libsqlite \
+    libsqlite.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -149,6 +155,11 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor
+
+# GPS
+PRODUCT_PACKAGES += \
+    libcurl \
+    libcurl.vendor
 
 # DT2W
 PRODUCT_PACKAGES += \
