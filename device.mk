@@ -135,7 +135,8 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 PRODUCT_PACKAGES += \
-    libshim_ui
+    libshim_ui \
+    libshim_ui.vendor
 
 # Dolby
 PRODUCT_PACKAGES += \
