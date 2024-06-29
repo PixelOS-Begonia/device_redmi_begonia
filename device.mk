@@ -79,7 +79,9 @@ PRODUCT_PACKAGES += \
     libexpat \
     libexpat.vendor \
     libpng \
-    libpng.vendor
+    libpng.vendor \
+    liblz4 \
+    liblz4.vendor
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
