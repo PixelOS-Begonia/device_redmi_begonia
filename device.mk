@@ -75,7 +75,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
     libcamera_metadata \
-    libcamera_metadata.vendor
+    libcamera_metadata.vendor \
+    libexpat \
+    libexpat.vendor
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
