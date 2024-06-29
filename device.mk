@@ -77,7 +77,9 @@ PRODUCT_PACKAGES += \
     libcamera_metadata \
     libcamera_metadata.vendor \
     libexpat \
-    libexpat.vendor
+    libexpat.vendor \
+    libpng \
+    libpng.vendor
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
