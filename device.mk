@@ -47,7 +47,9 @@ PRODUCT_PACKAGES += \
     libvisualizer \
     libtinycompress \
     libaudiofoundation \
-    libaudiofoundation.vendor
+    libaudiofoundation.vendor \
+    libstagefright_softomx_plugin \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -71,7 +73,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
-    android.hardware.camera.provider@2.6.vendor
+    android.hardware.camera.provider@2.6.vendor \
+    libcamera_metadata \
+    libcamera_metadata.vendor
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -117,7 +121,9 @@ PRODUCT_PACKAGES += \
     libion \
     libion.vendor \
     libutilscallstack \
-    libutilscallstack.vendor
+    libutilscallstack.vendor \
+    libpower \
+    libpower.vendor
 
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -228,6 +234,10 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.1.vendor \
     android.hardware.neuralnetworks@1.2.vendor \
     android.hardware.neuralnetworks@1.3.vendor
+
+PRODUCT_PACKAGES += \
+    APUWareApusysServer \
+    APUWareApusysServer.vendor
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
