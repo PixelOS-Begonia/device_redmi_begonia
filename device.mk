@@ -49,7 +49,8 @@ PRODUCT_PACKAGES += \
     libaudiofoundation \
     libaudiofoundation.vendor \
     libstagefright_softomx_plugin \
-    libstagefright_softomx_plugin.vendor
+    libstagefright_softomx_plugin.vendor \
+    libldacBT_bco
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
